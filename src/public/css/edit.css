@@ -1,0 +1,166 @@
+.detail-form {
+    margin-top: 36px auto 0;
+    box-sizing: border-box;
+    width: 50%;
+    max-width: 1000px;
+    padding: 0 24px;
+}
+
+.detail-form__heading {
+    color: #00BFFF;
+    margin-right: 5px;
+    margin-bottom: 24px;
+}
+
+.detail-form__heading_space {
+    color: black;
+    margin-left: 10px;
+}
+
+.detail-form__heading p {
+    display: inline-block;
+    color: black;
+}
+
+.detail-form__inner {
+    width: 100%;
+}
+
+.detail-form__group {
+    margin-bottom: 10px;
+}
+
+
+.detail-form__label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.detail-form__required {
+    background-color: red;
+    font-size: 12px;
+    color: white;
+    padding: 3px;
+    margin-left: 5px;
+}
+
+.detail-form__note {
+    color: red;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.detail-form__main {
+    display: flex;
+    gap: 24px;
+}
+
+.detail-form__image {
+    width: 50%;
+}
+
+.detail-form__right {
+    width: 50%;
+}
+
+.detail-form__input {
+    display: block;
+    padding: 8px 12px;
+    width: 100%;
+    height: 48px;
+    border: none;
+    background-color: white;
+    color: #808080;
+}
+
+.detail-form__image-input {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    padding: 0;
+    appearance: none;
+}
+
+.detail-form__image-preview {
+    margin-bottom: 5px;
+}
+
+.detail-form__image-preview img {
+    max-width: 300px;
+    height: 200px;
+    display: block;
+}
+
+.detail-form__season-inputs input[type="checkbox"] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.detail-form__season-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.detail-form__checkbox-label {
+    display: inline-block;
+    align-items: center;
+    gap: 6px;
+}
+
+.detail-form__textarea {
+    display: block;
+    padding: 8px 12px;
+    width: 100%;
+    height: 144px;
+    border: none;
+    background-color: white;
+    color: #808080;
+}
+
+.detail-form__error-message {
+    color: red;
+}
+
+.detail-form__btn-inner {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 40px;
+}
+
+.detail-form__back-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: #DCDCDC;
+    color: #696969;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.detail-form__send-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: #FFD700;
+    color: #696969;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.delete-button {
+    margin-left: 40px;
+}
+
+.delete-button {
+    display: inline-block;
+    margin-left: 20px;
+}

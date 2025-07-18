@@ -1,0 +1,134 @@
+.index-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.header__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: #FF8C00;
+    color: #696969;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.search-form__keyword-input {
+    padding: 8px 12px;
+    min-width: 150px;
+    border: 1px solid #A9A9A9;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.search-form__actions-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: #FFD700;
+    color: #696969;
+    border-radius: 3px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-form__price-sort::after{
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    width: 0;
+    height: 0;
+    border-top: 12px solid #BEB1A6;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    content: "";
+    transform: translateY(-50%);
+}
+
+.search-form__price-sort {
+    padding: 8px 12px;
+    min-width: 150px;
+    width: 200px;
+    border: 1px solid #A9A9A9;
+    background-color: white;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+svg.w-5.h-5 {
+    width: 30px;
+    height: 30px;
+}
+
+.search-main {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 5px;
+    width: 100%;
+    max-width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar {
+    width: 20%;
+}
+
+.index-cards {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.index-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .15);
+
+}
+
+.index-card__img-wrapper {
+    height: 150px;
+    overflow: hidden;
+}
+
+.index-card__img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.index-card__body {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.index-card__name,
+.index-card__price {
+    margin: 0;
+    font-size: 18px;
+}
+
+.index-paginate {
+    display: flex;
+    justify-content: center;
+}
+.index-card-link {
+    text-decoration: none;
+    color: black;

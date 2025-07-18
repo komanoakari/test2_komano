@@ -1,0 +1,40 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    min-height: 100vh;
+}
+
+.header {
+    display: grid;
+    align-items: center;
+    padding: 0 auto;
+    height: 60px;
+    background-color: white;
+    text-align: center;
+    font-family: serif;
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+}
+
+.header__heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFD700;
+    grid-column: 1;
+    justify-self: start;
+    text-align: left;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 48px;
+}
