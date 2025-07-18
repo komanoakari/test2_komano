@@ -44,15 +44,15 @@ php artisan db:seed
 
 ## 使用技術(実行環境)
 
--   PHP8.3.0
--   Laravel8.83.27
+-   PHP 7.4.9
+-   Laravel Framework 8.83.29
 -   MySQL8.0.26
 
 ## ER 図
 
-![alt](erd.png)
+![ER図](src/erd.drawio.png)
 
 ## URL
 
--   開発環境：http://localhost/
--   phpMyAdmin:：http://localhost:8080/
+-   開発環境：http://localhost:8014/
+-   phpMyAdmin:：http://localhost:8015/
