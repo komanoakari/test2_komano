@@ -24,7 +24,7 @@ class ContactController extends Controller
         return view('register', compact('seasons'));
     }
 
-    public function create(Request $request)
+    public function create(ContactRequest $request)
     {
         if ($request->has('back')) {
             return redirect('/products');

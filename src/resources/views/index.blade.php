@@ -7,8 +7,14 @@
 @section('content')
     <div class="index__content">
         <div class="index-heading">
-        <h2 class="content__heading">商品一覧</h2>
-        <a href="/products/register" class="header__link">+商品を追加</a>
+            <h2 class="content__heading">
+                @if(!empty(request('keyword')))
+                "{{ request('keyword') }}"の一覧
+                @else
+                商品一覧
+                @endif
+            </h2>
+            <a href="/products/register" class="header__link">+商品を追加</a>
         </div>
         <div class="search-main">
             <div class="sidebar">
@@ -24,6 +30,16 @@
                             <option value="price_desc" {{ request('sort') === 'price_desc' ? 'selected' : '' }}>高い順に表示</option>
                             <option value="price_asc" {{ request('sort') === 'price_asc' ? 'selected' : '' }}>安い順に表示</option>
                         </select>
+                        <div class="search-tag">
+                            @if(request('sort')==='price_desc')
+                            <span class="search-tag__text">高い順に表示
+                                <a href="{{ url('/products/search') . '?' . http_build_query(request()->except('sort')) }}" class="search-tag__icon">×</a>
+                            </span>
+                            @elseif(request('sort')=== 'price_asc')
+                            <span class="search-tag__text">安い順に表示</span>
+                            @endif
+                        </div>
+
                     </form>
                 </div>
             </div>
@@ -32,7 +48,7 @@
                 <a href="{{ url('/products/'. $product->id) }}" class="index-card-link">
                     <div class="index-card">
                         <div class="index-card__img-wrapper">
-                            <img src="{{ asset('storage/' . $product->image) }}" alt="画像プレビュー" style="max-width: 250px; display: block;">
+                            <img src="{{ asset('storage/' . $product->image) }}" alt="画像プレビュー">
                         </div>
                         <div class="index-card__body">
                             <p class="index-card__name">{{$product->name}}</p>

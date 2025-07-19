@@ -47,7 +47,6 @@ class UpdateRequest extends FormRequest
             'season_id.*.exists' => '季節を選択してください',
             'description.required' => '商品説明を入力してください',
             'description.max' => '120文字以内で入力してください',
-            'image.nullable' => '商品画像を登録してください',
             'image.mimes' => '「.png」または「.jpeg」形式でアップロードしてください',
         ];
     }

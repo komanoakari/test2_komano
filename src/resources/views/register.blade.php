@@ -6,8 +6,8 @@
 
 @section('content')
 <div class="register-form">
-    <h2 class="register-form__heading content__heading">商品登録</h2>
     <div class="register-form__inner">
+        <h2 class="register-form__heading content__heading">商品登録</h2>
         <form class="register-form__form" action="/products/register" method="post" enctype="multipart/form-data">
             @csrf
             <div class="register-form__group">

@@ -5,13 +5,13 @@
 @endsection
 
 @section('content')
-<div class="detail-form">
-    <div class="detail-form__heading content__heading">
-        商品一覧<span class="detail-form__heading_space">&gt;</span>
-        <p>{{$product->name}}</p>
-    </div>
+<div class="edit-form">
     <div class="detail-form__inner">
-        <form action="/products/{{$product->id}}/update" method="post" enctype="multipart/form-data">
+        <div class="detail-form__heading content__heading">
+            商品一覧<span class="detail-form__heading_space">&gt;</span>
+            <p>{{$product->name}}</p>
+        </div>        
+        <form action="/products/{{$product->id}}/update" method="post" enctype="multipart/form-data" class="detail-form">
             @csrf
             @method('PUT')
             <div class="detail-form__main">
@@ -99,7 +99,7 @@
             </div>
         </form>
 
-        <form action="/products/{{ $product->id }}/delete" method="post">
+        <form action="/products/{{ $product->id }}/delete" method="post" class="delete-form">
             @csrf
             <button class="delete-button">
                 <img src="{{asset('storage/images/Frame 406.png')}}" alt="削除" class="delete-icon">
