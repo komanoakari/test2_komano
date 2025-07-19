@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #F5F5F5;
-    min-height: 100vh;
+    height: 100%;
 }
 
 .header {
@@ -17,7 +17,7 @@ body {
     padding: 0 auto;
     height: 60px;
     background-color: white;
-    text-align: center;
+    text-align: left;
     font-family: serif;
 
     grid-template-columns: repeat(3,1fr);
@@ -29,12 +29,14 @@ body {
     font-weight: bold;
     color: #FFD700;
     grid-column: 1;
-    justify-self: start;
-    text-align: left;
+    margin-left: 10px;
 }
 
 .content {
     display: flex;
-    justify-content: center;
+
     padding: 48px;
+    flex-direction: column;
+    flex-grow: 1;
+    box-sizing: border-box;
 }
